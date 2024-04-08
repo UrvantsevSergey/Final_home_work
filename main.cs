@@ -14,6 +14,22 @@ class Program
     string[] mas = new string[mas_size];
     Console.WriteLine();
     PrintArray(Metod(array, mas));
-    
+
+    string[] Metod (string[] array, string[] mas)
+    {
+      int y = 0;
+      for (int e = 0; e < array.Length; e++)
+      {
+        if (y < 3)
+        {
+          if (array[e] == "2" || array[e] == "-2" || array[e] == ":-)")
+          {
+            mas[y] = array[e];
+            y++;
+          }
+        }
+      }
+      return mas;
+    }
   }
 }
