@@ -31,5 +31,21 @@ class Program
       }
       return mas;
     }
+
+    int SizeArray (string[] array)
+    {
+      int k = 0;
+      for (int h = 0; h < array.Length; h++)
+      {
+        if (k < 3)
+        {
+          if (array[h] == "2" || array[h] == "-2" || array[h] == ":-)")
+          {
+            k++;
+          }
+        }
+      }
+      return k;
+    }
   }
 }
