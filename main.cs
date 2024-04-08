@@ -56,5 +56,14 @@ class Program
         array[i] = Console.ReadLine();
       }
     }
+
+    void PrintArray(string[] array, int j = 0)
+    {
+      if (j < array.Length)
+      {
+        Console.Write($"{array[j]}\t");
+        PrintArray(array, j + 1);
+      }
+    }
   }
 }
