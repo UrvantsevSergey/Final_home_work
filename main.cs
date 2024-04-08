@@ -47,5 +47,14 @@ class Program
       }
       return k;
     }
+
+    void FillArray(string[] array)
+    {
+      for (int i = 0; i < size; i++)
+      {
+        Console.WriteLine("Введите элемент: ");
+        array[i] = Console.ReadLine();
+      }
+    }
   }
 }
