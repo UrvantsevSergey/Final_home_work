@@ -9,6 +9,7 @@ class Program
     string[] array = new string[size];
     FillArray(array);
     PrintArray(array);
+    Console.WriteLine();
     Console.WriteLine("Введите максимальное количество элементов второй строки: ");
     int new_mas_size = Int32.Parse(Console.ReadLine());
     
