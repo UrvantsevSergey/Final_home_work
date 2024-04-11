@@ -9,7 +9,10 @@ class Program
     string[] array = new string[size];
     FillArray(array);
     PrintArray(array);
-    int mas_size = SizeArray(array);
+    Console.WriteLine("Введите максимальное количество элементов второй строки: ");
+    int new_mas_size = Int32.Parse(Console.ReadLine());
+    
+    int mas_size = SizeArray(array, new_mas_size);
 
     string[] mas = new string[mas_size];
     Console.WriteLine();
@@ -32,12 +35,12 @@ class Program
       return mas;
     }
 
-    int SizeArray (string[] array)
+    int SizeArray (string[] array, int new_mas_size)
     {
       int k = 0;
       for (int h = 0; h < array.Length; h++)
       {
-        if (k < 3)
+        if (k < new_mas_size)
         {
           if (array[h] == "2" || array[h] == "-2" || array[h] == ":-)")
           {
