@@ -13,14 +13,14 @@ class Program
 
     string[] mas = new string[mas_size];
     Console.WriteLine();
-    PrintArray(Metod(array, mas));
+    PrintArray(Metod(array, mas, mas_size));
 
-    string[] Metod (string[] array, string[] mas)
+    string[] Metod (string[] array, string[] mas, int mas_size)
     {
       int y = 0;
       for (int e = 0; e < array.Length; e++)
       {
-        if (y < 3)
+        if (y < mas_size)
         {
           if (array[e] == "2" || array[e] == "-2" || array[e] == ":-)")
           {
