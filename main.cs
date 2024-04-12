@@ -10,7 +10,7 @@ class Program
     FillArray(array);
     PrintArray(array);
     Console.WriteLine();
-    Console.WriteLine("Введите максимальное количество элементов второй строки: ");
+    Console.WriteLine("Введите максимальное количество элементов второй строки:  ");
     int new_mas_size = Int32.Parse(Console.ReadLine());
     
     int mas_size = SizeArray(array, new_mas_size);
